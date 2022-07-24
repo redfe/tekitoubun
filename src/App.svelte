@@ -110,7 +110,7 @@
 
 <main>
   <h2>
-    Randomly divide <a
+    Tekitoubun <a
       href="https://github.com/redfe/tekitoubun"
       target="_blank"
       rel="noopener noreferrer"><Fa icon={faGithub} /></a
@@ -146,14 +146,18 @@
         {/each}
       </ul>
     {:else}
-      {#each groups as items, i}
-        <p class="group-name">Group {i + 1}</p>
-        <ul>
-          {#each items as item}
-            <li>{item}</li>
-          {/each}
-        </ul>
-      {/each}
+      <ul>
+        {#each groups as items, i}
+          <li>
+            <p class="group-name">Group {i + 1}</p>
+            <ul>
+              {#each items as item}
+                <li>{item}</li>
+              {/each}
+            </ul>
+          </li>
+        {/each}
+      </ul>
     {/if}
   </div>
 </main>
