@@ -124,7 +124,7 @@
   />
   <button on:click={add} disabled={!inputText}>add</button>
   <p>
-    <input type="number" min="1" bind:value={number} style:width="2.5rem" />
+    <input type="number" min="1" bind:value={number} style:width="3.5rem" />
     <select bind:value={numberType}>
       <option value={NumberType.Groups}>groups</option>
       <option value={NumberType.ByGroup}>by group</option>
@@ -185,8 +185,22 @@
   select,
   button {
     padding: 0.5rem;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+    border: solid 1px rgba(0, 0, 0, 0.3);
   }
 
+  button {
+    background-color: silver;
+  }
+
+  button:not([disabled]):hover {
+    opacity: 0.7;
+  }
+
+  h2 a {
+    color: black;
+  }
   h2 a:visited {
     color: black;
   }
