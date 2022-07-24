@@ -18,5 +18,10 @@
     "tslib": "^2.4.0",
     "typescript": "^4.6.4",
     "vite": "^3.0.0"
+  },
+  "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^6.1.1",
+    "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "svelte-fa": "^3.0.3"
   }
 }

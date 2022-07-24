@@ -1,5 +1,7 @@
 <script lang="ts">
   import { onMount } from "svelte";
+  import Fa from "svelte-fa/src/fa.svelte";
+  import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
   enum NumberType {
     Groups = "groups",
@@ -107,7 +109,13 @@
 </script>
 
 <main>
-  <h2>Randomly divide</h2>
+  <h2>
+    Randomly divide <a
+      href="https://github.com/redfe/tekitoubun"
+      target="_blank"
+      rel="noopener noreferrer"><Fa icon={faGithub} /></a
+    >
+  </h2>
   <input
     bind:this={input}
     bind:value={inputText}
@@ -173,5 +181,9 @@
   select,
   button {
     padding: 0.5rem;
+  }
+
+  h2 a:visited {
+    color: black;
   }
 </style>
